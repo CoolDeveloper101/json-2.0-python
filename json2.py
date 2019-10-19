@@ -12,25 +12,25 @@ def dumps(dictionary):
 
 def loads(s):
     data = json.loads(s)
-    b = {}
+    result = {}
     for obj in data:
-        o = data[obj]
-        loaded_data = pickle.loads(bytes.fromhex(o))
-        b[obj] = loaded_data
-    return b
+        hexed_obj = data[obj]
+        loaded_data = pickle.loads(bytes.fromhex(hexed_obj))
+        result[obj] = loaded_data
+    return result
 
 
-class User:
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
+# class User:
+#     def __init__(self, username, password):
+#         self.username = username
+#         self.password = password
 
-    def __repr__(self):
-        return f'User({self.username})'
+#     def __repr__(self):
+#         return f'User({self.username})'
 
 
-user = User("Ashwin", "testing321")
-dumped_user = dumps({"user": user})
-print(dumped_user)
-loaded_user = loads(dumped_user)
-print(loaded_user)
+# user = User("User", "testing321")
+# dumped_user = dumps({"user": user})
+# print(dumped_user)
+# loaded_user = loads(dumped_user)
+# print(loaded_user)
