@@ -17,4 +17,18 @@ class User:
   
   def __repr__(self):
     return f'User({self.username})'
+    
+    
+test_user = User("testing", 1234, testing@email.com)
+
+# Let's say I want to store this test_user. So we can do:
+
+import json2
+
+dumped_data = json2.dumps({'User': test_user})
+
+# if you want to load the dumped_data, you can use the loads method
+
+json2.loads(dumped_data)
+
 ```
