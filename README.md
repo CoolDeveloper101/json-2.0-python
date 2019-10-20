@@ -5,7 +5,16 @@ Json is a nice format, but it does not let you store a custom data type.
 This module lets you store custom objects, which can be used in a wide variety of tasks.
 For example, you cannot store a numpy array using json but using this module, you can.
 Currently, it can only pickle dictionaries.
+Here is an example on how to use this module.
+
 ```python
-def xyz():
-  print("Hi")
+class User:
+
+  def __init__(self, username, password, email):
+    self.username = username
+    self.password = password
+    self.email = email
+  
+  def __repr__(self):
+    return f'User({self.username})'
 ```
