@@ -6,4 +6,4 @@ This module lets you store custom objects, which can be used in a wide variety o
 For example, you cannot store a numpy array using json but using this module, you can.
 Currently, it can only store dictionaries.
 
-Go **[here]**(https://github.com/cooldeveloper101/json-2.0-python/wiki) to see the documentation.
+Go [**here**](https://github.com/cooldeveloper101/json-2.0-python/wiki) to see the documentation.
