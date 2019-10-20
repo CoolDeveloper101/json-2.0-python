@@ -19,7 +19,7 @@ class User:
     return f'User({self.username})'
     
     
-test_user = User("testing", 1234, testing@email.com)
+test_user = User("testing", 1234, 'testing@email.com')
 
 # Let's say I want to store this test_user. So we can do:
 
