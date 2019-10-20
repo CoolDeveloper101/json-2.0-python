@@ -7,6 +7,8 @@ For example, you cannot store a numpy array using json but using this module, yo
 Currently, it can only pickle dictionaries.
 Here is an example on how to use this module.
 
+Go [here](https://github.com/cooldeveloper101/json-2.0-python/wiki) to see the documentation.
+
 ```python
 class User:
 
