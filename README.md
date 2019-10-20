@@ -4,6 +4,6 @@ This is a wrapper around the *json* module, which uses *pickle* to store a wide 
 Json is a nice format, but it does not let you store a custom data type.
 This module lets you store custom objects, which can be used in a wide variety of tasks.
 For example, you cannot store a numpy array using json but using this module, you can.
-Currently, it can only pickle dictionaries.
+Currently, it can only store dictionaries.
 
-Go [here](https://github.com/cooldeveloper101/json-2.0-python/wiki) to see the documentation.
+Go **[here]**(https://github.com/cooldeveloper101/json-2.0-python/wiki) to see the documentation.
