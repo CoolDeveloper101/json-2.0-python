@@ -18,19 +18,3 @@ def loads(s):
         loaded_data = pickle.loads(bytes.fromhex(hexed_obj))
         result[obj] = loaded_data
     return result
-
-
-# class User:
-#     def __init__(self, username, password):
-#         self.username = username
-#         self.password = password
-
-#     def __repr__(self):
-#         return f'User({self.username})'
-
-
-# user = User("User", "testing321")
-# dumped_user = dumps({"user": user})
-# print(dumped_user)
-# loaded_user = loads(dumped_user)
-# print(loaded_user)
